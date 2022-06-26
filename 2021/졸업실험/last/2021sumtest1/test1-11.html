@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<style>{
+    .text1{
+      height: 60px;
+    }
+
+    .test{
+    height: 80px;
+    }
+  }
+	</style>
+</head>
+
+<body>
+	<script src="script.js">
+	</script>
+	<div class="test1">제1 실험<br></div>
+<div class="text">학습을 시작합니다<br/></div>
+<div class="text">아래 출력되는 단어를 암기해 주십시오
+</div>
+<div class="text">각 단어는 3회 반복 됩니다.
+</div>
+<p>
+<form name="myForm">
+
+<input type="text" size="30" name="myFormMsg">
+
+</form>
+<script type="text/javascript">
+
+var myTest = new Array('아저씨', '아저씨',	'강산',	'정치',	'삼가'	,'바퀴',	'압정',	'대기',	'연배',	'하늘');
+var myCnt =0;
+
+document.write(randomItem(myTest), '<br />');
+
+document.write(randomItem(myTest), '<br />');
+
+document.write(randomItem(myTest), '<br />');
+
+
+// 주어진 배열에서 요소 1개를 랜덤하게 골라 반환하는 함수
+
+function randomItem(a) {
+  return a[Math.floor(Math.random() * a.length)];
+  myCnt =(myCnt == myTest.length)? 0 : myCnt+1;
+}
+function changeword () {
+  document.write(randomItem(myTest) = '<br />'
+}
+
+
+</script>
+<script type="text/javascript">
+function changeword () {
+  document.write(randomItem(myTest) = '<br />'
+}
+var timeoutId = setTimeout(changeword,3000)
+</script>
+
+
+<script type="text/javascript">
+
+ var myMsg = "3 2 1";
+ var myCnt =1;
+ 
+ function myfunc() {
+ document.myForm.myFormMsg.value = myMsg.substring(0,myCnt) + "_";
+
+
+ myCnt =(myCnt == myMsg.length)? 0 : myCnt+1;
+
+}
+setInterval("myfunc()",502);
+
+
+</script>
+<div class="text"><p>학습이 종료되었다면 암기결과를 확인합시다.
+</div>
+<a href="test1-1.html">암기력 확인</a>
+
+[출처] 특정시간 후 자동으로 페이지 이동 (HTML & javascript)|작성자 gtime4u
+</body>
+
+</html>

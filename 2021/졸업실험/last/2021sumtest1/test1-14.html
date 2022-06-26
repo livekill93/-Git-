@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム学習</title>
+</head>
+<body>
+    <h2>ランダム学習のテストを行います</h2>
+    韓国語の記憶テストを行います
+    <br>韓国語とその日本語訳が5秒ずつ3セット表示されるので記憶してください
+    <br>終了後、計8問の4択のテストを行います
+    <FORM name="myForm"><INPUT size="30" style="font-size:50px;" name="tbox" type="text">
+    </FORM>
+    <FORM><INPUT type="button" onclick="Loopmsg();" name="botan" value="スタート"></FORM>
+    <script type="text/javascript">
+    let i = 0, v = 0;
+
+    function random(){
+    msg = [　 // 表示する文字列の配列
+
+        " 어려워부러 ",
+        " i:い ",
+        " u:う ",
+        " e:え ",
+        " o:お ",
+        " ka:か ",
+        " ki:き ",
+        " ku:く "
+    ]
+    new_msg = [];
+    while (msg.length > 0) {
+        n = msg.length;
+        k = Math.floor(Math.random() * n);
+
+        new_msg.push(msg[k]);
+        msg.splice(k, 1);
+    }
+    }
+    function Loopmsg() {
+    if (v < 24) {
+        if(v==0 || v==8 || v==16){
+            random();
+        }
+    v++;　   // vは繰り返し回数、この場合は24回で止まります
+            if (i < new_msg.length) {
+                document.myForm.tbox.value = new_msg[i];
+                i++;
+                if (i == new_msg.length) {  // new_msg.lengthは配列の数
+                    i = 0;
+                }   
+            setTimeout("Loopmsg()", 5000);　 //メッセージの変わる速度（単位は千分の一秒）
+            }        
+    }
+    else{
+        setTimeout("location.href='https://docs.google.com/forms/d/e/1FAIpQLSdmtXNnZqpg13cEG5G2fgomxkVXBn9_9gYP5iGy0ykk31twwQ/viewform'",1000);
+    }
+    }
+    
+    </script>
+</body>
+</html>

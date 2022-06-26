@@ -1,0 +1,76 @@
+<script language="JavaScript">
+<!--//
+var urlArray = new Array(); // 배너를 클릭했을때 옮겨질 주소
+var imgArray = new Array(); // 배너의 갯수
+function retImage(src)
+{
+    imgRet = new Image();
+    imgRet.src = src;
+    return imgRet;
+}
+
+//각 배너에 대한 링크를 설정 : 여기에 추가/삭제만 하시면 됩니다.
+urlArray[0] = "https://i.imgur.com/X6gKWmy.png";
+imgArray[0] = retImage("https://i.imgur.com/X6gKWmy.png");
+urlArray[1] = "https://i.imgur.com/AeeJ7NT.png";
+imgArray[1] = retImage("https://i.imgur.com/AeeJ7NT.png");
+urlArray[2] = "https://i.imgur.com/6iigBvy.png";
+imgArray[2] = retImage("https://i.imgur.com/6iigBvy.png");
+urlArray[3] = "https://i.imgur.com/QfvITuA.png";
+imgArray[3] = retImage("https://i.imgur.com/QfvITuA.png");
+urlArray[4] = "https://i.imgur.com/aRnJiz0.png";
+imgArray[4] = retImage("https://i.imgur.com/aRnJiz0.png");
+urlArray[5] = "https://i.imgur.com/f7zevNz.png";
+imgArray[5] = retImage("https://i.imgur.com/f7zevNz.png");
+urlArray[6] = "https://i.imgur.com/OnNsPyC.png";
+imgArray[6] = retImage("https://i.imgur.com/OnNsPyC.png");
+urlArray[7] = "https://i.imgur.com/hdP2LsK.png";
+imgArray[7] = retImage("https://i.imgur.com/hdP2LsK.png");
+urlArray[8] = "https://i.imgur.com/mN7MX0Z.png";
+imgArray[8] = retImage("https://i.imgur.com/mN7MX0Z.png");
+
+var gCounter = 0;
+function rotateBanner() // 배너 로테이트 함수
+{
+  if(gCounter >= urlArray.length) gCounter = 0;
+  document.idBanner.src = imgArray[gCounter].src; // 새 배너 이미지
+  gCounter++;
+}
+var timer = window.setInterval("rotateBanner()", 15000); // 5초마다 배너바꾸기
+//-->
+</script>
+<script type="text/javascript">
+
+ var myMsg = "5 4 3 2 1";
+ var myCnt =1;
+ 
+ function myfunc() {
+ document.myForm.myFormMsg.value = myMsg.substring(0,myCnt) + "_";
+
+
+ myCnt =(myCnt == myMsg.length)? 0 : myCnt+1;
+
+}
+
+setInterval("myfunc()",499);
+</script>
+ </head> 
+ <meta http-equiv="Refresh" content="150;url=https://docs.google.com/forms/d/e/1FAIpQLSeOVi71JPU3-YbAEg3WcBCzLVEQCnGLnE6gJ_73ar-tJOgeeA/viewform?usp=sf_link">
+  <body onload="rotateBanner()"> 
+    	<div class="test1">第2実験<br></div>
+<div class="text">学習を始めます。<br/></div>
+<div class="text">以下に出力される単語を暗記してください
+</div>
+<div class="text">5秒間、表示します。<br>
+    <img src="rotateBanner()"  border=0 name="idBanner"></a>
+
+    <p>
+<form name="myForm">
+  <input type="text" size="40" name="myFormMsg">
+</form>
+
+    <div class="text"><p>学習が終了したら暗記結果を確認しましょう。
+</div>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeOVi71JPU3-YbAEg3WcBCzLVEQCnGLnE6gJ_73ar-tJOgeeA/viewform?usp=sf_link">暗記力確認</a>
+   </body> 
+  </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <meta http-equiv="Refresh" content="5.1;url=https://forms.gle/GXNvjJctPMFCm43ZA">
+  <title>学習</title>
+</head>
+<bbody oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+  
+<h1>表示される文字列を暗記してください。</h1>
+<font size=+2 style="">
+
+<br>224698399</br>
+
+  
+</font>
+
+<br></br>
+<div class="text"><p>学習が終了したら暗記結果を確認しましょう。
+</div>
+<br><span id="MyTimer">00:05</span><br>
+
+      
+<a href="https://forms.gle/GXNvjJctPMFCm43ZA">時間が経ってもページが転換されない場合はクリックしてください。</a>
+</body>
+  <script type="text/javascript">
+function startTimer(duration, display) {
+  var timer = duration, minutes, seconds;
+  var interval = setInterval(function () {
+    minutes = parseInt(timer / 60, 10)
+    seconds = parseInt(timer % 60, 10);
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = minutes + ":" + seconds;
+
+    if (--timer < 0) {
+      timer = duration;
+    }
+    if(timer === 0) {
+      clearInterval(interval);
+      display.textContent = "テストを始めます。";
+    }
+  }, 1000);
+}
+
+window.onload = function () {
+  
+  var minutes = 1;
+
+  var fiveMinutes = (5 * minutes) - 1,
+    display = document.querySelector('#MyTimer');
+  startTimer(fiveMinutes, display);
+};
+
+</script>
+
+
+
+</html>
