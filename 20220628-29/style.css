@@ -29,7 +29,7 @@ body{
   }
   @media(max-width:800px){
     #grid{
-      display: block;
+      display: black;
     }
     ol{
       border-right:none;
