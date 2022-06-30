@@ -1,6 +1,6 @@
 //c++
 #include <iostream>
-#include <queue>
+#include <queue>//큐사용
 
 using namespace std;
 
@@ -11,7 +11,7 @@ int main(){
     cin >> n >> k;
     for(int i=1;i<=n;i++) people.push(i);
     cout << "<";
-    while(removedPeopleNum!=n){
+    while(removedPeopleNum!=n){.
         while(1){
             if(current++ % k == 0){
                 cout << people.front();
