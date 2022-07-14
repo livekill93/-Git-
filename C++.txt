@@ -30,3 +30,5 @@ std;;cout 와 함께 사용하면 endl은 줄바꿈 문자를 삼입하여 커�
 ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 이코드는 stram동기화를 끊는다 C와 C++의 동기화를 끊음 즉 C의 함수를 사용할수가없고
 C++로만 하게되는것  
+
+while 반복문의 하나
