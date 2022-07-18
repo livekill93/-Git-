@@ -48,3 +48,5 @@ array라는 배열에 N개의 크기를 갖고있다고 할 때, 기본적으로
 sort(array + 0, array + N); \
 
 min max 최대 최소
+
+int cnt[42] = {};	//0으로 초기화 bool 배열이면 bool count[42] = {false}로할것
