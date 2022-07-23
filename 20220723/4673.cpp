@@ -1,6 +1,6 @@
 #include<iostream>
 #include<cstdio>
-#define N 10001
+#define N 10001 //배열 arr[1 ~ 10000] 까지 이므로 10001.
 
 using namespace std;
 bool arr[N];
@@ -33,4 +33,3 @@ int main(){
     }
     return 0;
 }
-//갑자기 왜되 이거?
