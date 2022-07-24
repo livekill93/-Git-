@@ -50,3 +50,11 @@ sort(array + 0, array + N); \
 min max 최대 최소
 
 int cnt[42] = {};	//0으로 초기화 bool 배열이면 bool count[42] = {false}로할것
+
+매크로 함수
+#define N 10001 //배열 arr[1 ~ 10000] 까지 이므로 10001.
+출처: https://blockdmask.tistory.com/160 [개발자 지망생:티스토리]
+
+문자의 정수변환
+
+int x =(int)char -48;
