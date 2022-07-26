@@ -7,7 +7,7 @@ int main(){
     cin >>A >>B >>C ;
 
     cout << (A + B) % C << "\n";
-    cout << (A % C + A % C) % C << "\n";
+    cout << (A % C + B % C) % C << "\n";
     cout << (A * B) % C << "\n";
     cout << (A % C * B % C) % C << "\n";
     return 0;
