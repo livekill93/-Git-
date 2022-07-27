@@ -20,6 +20,6 @@ int main(){
     if(str[str.length() -1]== ' ')
         cnt--;
     
-    cout << cnt;
+    cout << cnt+1;
     return 0;
 }
