@@ -58,3 +58,19 @@ int cnt[42] = {};	//0으로 초기화 bool 배열이면 bool count[42] = {false}
 문자의 정수변환
 
 int x =(int)char -48;
+
+
+istream의 cin.getline() 함수
+cin.getline(char str, streamsize n);
+cin.getline(char str, streamsize n, char dlim);
+
+C언어 스타일의 문자열을 입력 받을 때 사용 (char형 배열, 문자열의 끝이 널문자)
+크기 n을 지정하면 (n-1)개의 문자를 읽어와 str 배열에 저장 (마지막은 널문자)
+지정한 delimiter를 만나기 전까지 모든 문자를 읽어서 str 배열에 저장 (디폴트 구분자는 개행 문자)
+
+string의 getline() 함수
+getline(istream& is, string str);
+getline(istream& is, string str, char dlim);
+
+입력 가능한 최대 문자 수를 지정하지 않아도 된다.
+지정한 delimiter를 만나기 전까지 모든 문자를 읽어서 string 객체에 저장 (디폴트 구분자는 개행 문자)
