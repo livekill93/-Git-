@@ -1,6 +1,7 @@
-#include"SimpleFunc.h"
+#include<iostream>
+#include"SimpleFunc.hpp"
 
-int main(){
+int main(void){
     BestComImpl::SimpleFunc();
     ProgComImpl::SimpleFunc();
     return 0;

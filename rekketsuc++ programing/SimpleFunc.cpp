@@ -1,10 +1,10 @@
 #include<iostream>
-#include"SimpleFunc.h"
+#include"SimpleFunc.hpp"
 
-void BestComImpl::SimpleFunc(){
-    std::cout<<"Funl by BestComImpl"<<std::endl;
+void BestComImpl::SimpleFunc(void){
+    std::cout<<"Func by BestComImpl"<<std::endl;
 }
 
-void ProgComImpl::SimpleFunc(){
-    std::cout<<"Funl by ProgComImpl"<<std::endl;
+void ProgComImpl::SimpleFunc(void){
+    std::cout<<"Func by ProgComImpl"<<std::endl;
 }
