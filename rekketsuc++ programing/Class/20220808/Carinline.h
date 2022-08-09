@@ -28,12 +28,12 @@ class Car{
         void Break();
 
 };
-Inline void Car::ShowCarState() {
+inline void Car::ShowCarState() {
 	            cout << "소유자 ID : " << gamerID << endl;
 	            cout << "연료량 : " << fuelGauge << "%" << endl;
 	            cout << "현재속도 : " << curSpeed << "Km/h" << endl << endl;
         }
-Inline void Car::Break() {
+inline void Car::Break() {
 	            if (curSpeed < CAR_CONST::BRK_STEP) {
     		    curSpeed = 0;
 		

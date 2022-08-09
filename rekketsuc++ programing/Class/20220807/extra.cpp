@@ -21,7 +21,7 @@ void ShowCarState(const Car &car) {
 }
 
 void Accel(Car &car) {
-	if (car.fuelGauge <= 0) {
+	if (car.fuelGauge <= 10) {
 		return;
 	} else {
 		car.fuelGauge -= FUEL_STEP;
