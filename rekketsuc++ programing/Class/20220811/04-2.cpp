@@ -2,6 +2,36 @@
 
 using namespace std;
 
+class point{
+private:
+    /* data */
+    int xpos,ypos;
+
+    public:
+    void Init(int x, int y){
+        xpos = x;
+        ypos = y;
+    }
+    void ShowPointInfo() const{
+        cout<<"["<<apos<<","<<bpos<<"]"<<endl;
+    }
+};
+
+class Circle{
+    private:
+    int rad;
+    point center;
+    
+    public:
+       void Init(int x, int y,int r){
+        rad = r;
+        center.Init(x,y);
+    }
+    void ShowCircleInfo() const{
+        cout<<"radius : "<<rad<<endl;
+        center.ShowPointInfo();
+    }
+};
 
 
 class Ring{
