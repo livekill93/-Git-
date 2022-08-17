@@ -18,7 +18,7 @@ class SimpleClass{
             num2 =n2;
         }
         /*
-        SimpleClass(inr n1 = 0, int n2 = 0){
+        SimpleClass(int n1 = 0, int n2 = 0){
             num1 = n1;
             num2 = n2;
         }
