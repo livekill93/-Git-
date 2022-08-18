@@ -12,4 +12,4 @@ namespace FristProgram
     Console.WriteLine("WriteLine");
 }
     }
-}
+} 
