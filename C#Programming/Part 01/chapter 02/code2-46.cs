@@ -1,5 +1,6 @@
 //자료형 검사
 //GetType() 메서드 활용
+using System;
 namespace FristProgram
 
 {

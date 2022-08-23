@@ -1,5 +1,6 @@
 //증감연산자
 //여러줄로 나누어 적은 증감 연산자
+using System;
 namespace FristProgram
 
 {

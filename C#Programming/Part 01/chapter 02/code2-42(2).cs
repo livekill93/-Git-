@@ -1,5 +1,6 @@
 //증감연산자
 //증감 연산자의 전위 형태
+using System;
 namespace FristProgram
 
 {

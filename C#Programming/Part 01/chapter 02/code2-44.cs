@@ -1,5 +1,6 @@
 //증감연산자
 //증감연산자 이해도 확인
+using System;
 namespace FristProgram
 
 {
