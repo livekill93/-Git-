@@ -1,0 +1,111 @@
+//심심풀이로 만든 무언가.
+
+using System;
+
+namespace program
+{
+    class Data_ped
+    {
+        static void Main(string[] args)
+        {
+            string[] starr ={"첫번째 모노로그","두번째 모노로그","시설관리 보고서 초본","세번째 모노로그","창고 재고 관리 일람","근무표","네번째 모노로그","비어있는 데이터","비어있는 데이터","비어있는 데이터"};
+            string[] starr2 ={"아 집에 존나게 가고싶은데 안보내준다....","오늘도 어제처럼 지나간다 지루해...","시설관리 보고서...","물푸이 빠르게 사라지고있다....",
+            "2741-001 = 00 xgat-48-8741 - 00","11/48 - 알렉세이","우리말고도 누군가 있어!!","비어있는 데이터","비어있는 데이터","비어있는 데이터"};
+            Boot_program:
+            Console.WriteLine("어떤 작업을 하시겠습니까?");
+            Console.WriteLine("1. 읽기  2. 수정  3.종료 : ");
+            int i = int.Parse(Console.ReadLine());
+            
+            if (i == 1)
+            {   
+                Read_Data:
+                 
+                Console.WriteLine("현재 저장된 기록을 표시합니다.");
+                int z=0;
+                while(z<starr.Length){
+                    Console.WriteLine(z+1+". "+starr[z]);
+                    z++;
+                }
+                Console.WriteLine("몇번째 기록을 읽습니까?");
+                int a = int.Parse(Console.ReadLine());
+                Console.WriteLine("저장된 기록을 불러옵니다. :"+starr[a-1]);
+                Console.WriteLine("내용 :"+starr2[a-1]);
+                
+                Choice_One:
+                
+                Console.WriteLine("종료합니까? Yes/No");
+                string b = Console.ReadLine();
+                if( b == "yes")
+                {
+                    goto Boot_program;
+                }
+                else if( b =="no")
+                {
+                    goto Read_Data;
+                }
+                else
+                {
+                    Console.WriteLine("다시입력해주십시오");
+                    
+                    goto Choice_One;
+                }
+                
+                
+            }
+            else if( i == 2)//수정
+                    {   
+                        Fix_DATA:
+                        Console.WriteLine("현재 저장된 기록은"+starr.Length+"개 입니다");
+                        
+                        int x=0;
+                        while(x < starr.Length)
+                        {
+                            Console.WriteLine(x+1+". "+starr[x]);
+                            x++;
+                        }
+                        
+                        Console.WriteLine("몇번째 기록을 수정합니까?");
+                        int c =int.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine(c+"번 데이터"+starr[c-1]+"를 수정합니다 제목을 입력하시오 :/n");
+                        string d = Console.ReadLine();
+                        starr[c-1]=d;
+                        Console.WriteLine(c+"번 데이터의 내용을 입력하십시오. :");
+                        string e = Console.ReadLine();
+                        starr2[c-1]=e;
+                        Console.WriteLine("완료되었습니다");
+                        Choice_two:
+                        Console.WriteLine("확인하십니까? Yes/No");
+                        d = Console.ReadLine();
+                        if( d == "yes")
+                        {
+                            Console.WriteLine("저장된 기록을 불러옵니다. :"+starr[c-1]);
+                            Console.WriteLine("내용 :"+starr2[c-1]);
+                            
+                            goto Boot_program;
+                        }
+                        else if( d =="no")
+                        {
+                            goto Fix_DATA;
+                        }
+                        else
+                        {
+                         Console.WriteLine("다시입력해주십시오");
+                         
+                            goto Choice_two;
+                        }
+                        
+                    }
+                    else
+                    {   
+                    END_PROGRAM:
+                    Console.WriteLine("프로그램 종료. . .");
+                      }
+            
+            }
+            
+            
+        
+    }
+    
+}
