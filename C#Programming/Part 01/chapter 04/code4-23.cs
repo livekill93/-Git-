@@ -18,7 +18,7 @@ namespace prog {
                     goto doNotUse;
                 }
             }
-            goto doNotUse:
+             doNotUse:
             Console.WriteLine("goto 키워드");
             
         }

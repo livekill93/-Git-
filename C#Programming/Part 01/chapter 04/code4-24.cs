@@ -12,7 +12,7 @@ namespace pc {
                 {
                     continue;
                 }
-                Console.WriteLine(i);
+                Console.WriteLine(i);                                                                                                                                                                                                                                                                                                                          
             }
         }
     }

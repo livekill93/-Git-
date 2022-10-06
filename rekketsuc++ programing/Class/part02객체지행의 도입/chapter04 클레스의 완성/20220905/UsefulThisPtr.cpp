@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class TwoNumber;
+class TwoNumber
 {
     private:
         int num1,num2;
@@ -20,6 +20,6 @@ class TwoNumber;
 int main ()
 {
     TwoNumber two(2,4);
-    two.ShwTwoNUmber();
+    two.ShowTwoNumber();
     return 0;
 }

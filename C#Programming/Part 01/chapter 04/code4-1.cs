@@ -7,7 +7,7 @@ namespace hang
 {
     class ger
     {
-        static(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("출력");
             Console.WriteLine("출력");
