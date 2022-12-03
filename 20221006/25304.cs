@@ -1,3 +1,4 @@
+//영수증
 
 using System;
 
