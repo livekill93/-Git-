@@ -3,3 +3,12 @@ div{
     font-size:  100px;
     text-decoration: underline;
 }
+div1{
+    color: black;
+    font-size:  54px;
+    
+}
+span{
+    color: blue;
+    background: black;
+}
