@@ -1,0 +1,17 @@
+div2{
+    color: rgb(24, 21, 21);
+    font-size:  56px;
+    
+}
+.box::before{
+    content: "앞!";
+}
+
+.box::after{
+    content: "뒤!";
+}
+a{
+    font-size: 100 px;
+}
+a:hover{    color: brown;}
+a:active{   color: aqua;}

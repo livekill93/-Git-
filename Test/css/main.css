@@ -12,3 +12,21 @@ span{
     color: blue;
     background: black;
 }
+a:hover{    color: brown;}
+a:active{   color: aqua;}
+input:focus{
+    background: orange;
+}
+
+.fruits span:first-child{
+    color: red;
+}
+.fruits h3:last-child{
+    color: red;
+}
+.fruits *:nth-child(2){
+    color: blueviolet;
+}
+.fruits *:not(span){
+    color: green;
+}
