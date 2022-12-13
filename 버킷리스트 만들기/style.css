@@ -1,7 +1,7 @@
 @import url(https://fonts.google.com/?subset=korean);
 
 * {
-    \\전체에 적용\\ font-family: 'Hahmlet', serif;
+     font-family: 'Hahmlet', serif;
 }
 
 .title {
