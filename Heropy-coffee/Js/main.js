@@ -15,3 +15,58 @@ searchInputEl.addEventListener('blur', function () {
     searchEl.classList.remove('focused');
     searchInputEl.setAttribute('placeholder', '');
   });
+//페이지 스크롤에 따른 요소 제어
+const badgeEl = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
+// 페이지에 스크롤 이벤트를 추가!
+window.addEventListener('scroll', function(){
+  console.log(this.window.scrollY);
+  if(this.window.screenY>500){
+    //badges 요소 숨김!
+    gsap.to(badgeEl,.6,{
+      opacity: 0,
+      display: 'none'
+    });
+  }else{
+    gsap.to(badgeEl,.6,{
+      opacity:1,
+      display:'block'
+    });
+  }
+});
+//나타날 요소(.fade-in)들을 찾기
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+//요소를 하나씩 반복처리
+fadeEls.forEach(function(fadeEls,index){
+  gsap.to(fadeEls,1,{
+    delay: (index + 1) * .7,
+    opacity : 1
+  });
+});
+/*swiper api*/
+new Swiper('.notice .swiper',{
+  direction: 'vertical',//수직 슬라이드
+  autoplay: true, //자동재생
+  loop : true //반복 재생
+});
+new Swiper('.promotion .swiper',{
+  autoplay:true,
+  loop:true,
+  slidesPerView:3,
+  spaceBetween:10,
+  centeredSlides: true
+});
+
+// 슬라이드 영역 요소 검색!
+const promotionEl = document.querySelector('section.promotion');
+// 슬라이드 영역를 토글하는 버튼 검색!
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+
+// 토글 버튼을 클릭하면,
+promotionToggleBtn.addEventListener('click', function () {
+  if (promotionEl.classList.contains('hide')) {
+    promotionEl.classList.remove('hide');
+  } else {
+    promotionEl.classList.add('hide');
+  }
+});
