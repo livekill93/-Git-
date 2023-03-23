@@ -578,4 +578,24 @@ cursor: pointer;
   top: 0;
   right: 0;
 }
+/*픽업*/
+.pick-your-favorite {
+  background-image: url("../images/favorite_bg.jpg");
+}
+.pick-your-favorite .inner{
+  padding: 110px 0;
+}
+.pick-your-favorite .text-group{
+  width: 362px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+ 
+}
+.pick-your-favorite .text-group .title{
+ margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description{
+margin-bottom: 40px;
+}
 
