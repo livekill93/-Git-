@@ -91,3 +91,14 @@ gasp.to(',floating3',2.5,{
   yoyo: true,
   ease: Power1.easeInOut
 });
+
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function(spyEls){
+  new Scrollmagic
+    .scene({
+      triggerElement:spyEls,
+      triggerHook: .8
+    })
+    ,setClassToggle(spyEls,'show')
+    .addTo(new Scrollmagic.Controller());
+});
