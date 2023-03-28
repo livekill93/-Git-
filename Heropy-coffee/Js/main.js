@@ -28,14 +28,29 @@ window.addEventListener('scroll', function(){
       opacity: 0,
       display: 'none'
     });
+    //상단으로 이동
+    gsap.to(toTopEl,.6,{
+      opacity:1,
+      x:0
+    });
+    
   }else{
     gsap.to(badgeEl,.6,{
       opacity:1,
       display:'block'
     });
+    //상단이동
+    gsap.to(toTopEl,.6,{
+      opacity:0,
+      x:100
+    });
   }
 });
-
+toTopEl.addEventListener('click',function(){
+  gsap.to(window,.6,{
+    scrollTo: 0
+  });
+})
 
 //나타날 요소(.fade-in)들을 찾기
 const fadeEls = document.querySelectorAll('.visual .fade-in');
